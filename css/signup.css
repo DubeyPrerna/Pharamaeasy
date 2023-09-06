@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+     font-family: 'Lato', sans-serif;
+}
+.outer-box{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top left,#3ed8ff,#a8f5ff);
+}
+
+.inner-box{
+    width: 350px;
+    /* height: 300px; */
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px 40px;
+    /* background-color: #ffffff; */
+    background: linear-gradient(to top left,#ffffffff,#ffffff33);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #2b3f56;
+    z-index: 2;
+}
+
+.signup-header h1{
+    font-size: 3rem;
+    color: #212121;
+}
+.signup-header p{
+    font-size: 1rem ;
+    color:#555;
+    padding: 10px 0px;
+}
+.signup-body{
+    margin: 15px 0;
+}
+.signup-body p{
+    margin: 10px 0;
+}
+.signup-body p label{
+    display: block;
+    margin: 2px;
+    font-weight: bold;
+}
+.signup-body p input{
+    width: 100%;
+    padding: 5px ;
+    border: 2px solid #585656;
+    border-radius: 5px;
+    font-size: inherit;
+}  
+
+.signup-body p input[type="submit"]{
+    background-color: #3498db;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+}
+
+.signup-body p input[type="submit"]:hover{
+    background-color: #0b69a8;
+    border:2px solid black;
+}
+
+.signup-footer{
+    color: #322e2e;
+    text-align: center;
+}
+
+.signup-footer p a{
+    color:#3498db ;
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    /* boder:2px solid black; */
+    border-radius: 100px;
+    background: linear-gradient(to top right,#ffffff33,#ffffffff);
+    position: absolute;
+}
+
+.btn{
+    background-color: #3498db;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    padding: 5px;
+    border-radius:5px;
+
+}
+
+.btn a{
+    text-decoration: none;
+    color: #fff;
+}
+.btn:hover{
+    background-color: #0b69a8;
+    border: none;    
+}
+
+.c1{
+     top:20px;
+     left:40px;
+}
+
+.c2{
+    bottom:50px;
+    right:50px;
+}

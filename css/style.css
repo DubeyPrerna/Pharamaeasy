@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+:root{
+    --main-color:#10847E;
+    --text-color:#30363c;
+    --shadow: rgba(60,64,67,0.3) 0px 1px 2px 0px,
+    rgba(60,64,67,0.15) 0px 2px 6px 2px;
+    --shadow-border:rgba(0,0,0,0.2) 0px 1px 3px 0px,
+    rgba(27,31,35,0.15) 0px 0px 0px 1px;
+}
+
+/* --- Global CSS--- */
+.container{
+    width: 100%;
+    padding: 40px 5%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+/* .  */
+
+/* ---Navbar  design code--- */
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+}
+
+.nav{
+    box-shadow:lightgrey 0 0 5px;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    height: 10vh;
+    display: flex;
+}
+
+.nav > img{
+    margin: 7px 35px;
+    height: 40px;
+}
+
+.nav > img+div{
+    width: 1px;
+    background-color: grey;
+    height: 30px;
+    margin: auto 0;
+}
+
+#pick-address{
+    margin: auto 30px;
+}
+
+/* Adjust the electricity yellow sign */
+#pick-address > div{
+    display: flex;
+}
+
+#pick-address > div p{
+    font-size: 13px;
+}
+
+/* Adjusting 452001 Adress */
+#pick-address h4{
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    display: inline;
+}
+
+#pick-address > i{
+    font-size: 10px;
+    cursor: pointer;
+}
+
+/* Download App color change and design */
+.download-app{
+    cursor: pointer;
+    display: flex;
+    margin: auto 20px auto auto;
+    padding: 10px 15px;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #e2f7ff;
+}
+
+.download-app:hover{
+    background-color:rgb(200, 240, 255) ;
+}
+
+
+.download-app > p{
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.nav > ul{
+    margin: auto 20px;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    /* gap: 20px; */
+}
+
+.nav > ul li,
+.nav > ul li a{
+    margin: 10px 15px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav ul li p{
+    margin-left: 5px;
+    font-size: 18px;
+
+}
+
+/* ---Search Bar--- */
+
+.search-layout{
+    margin-top: 100px;
+}
+
+.search-layout > div{
+    width: 70%;
+    margin: 30px auto 0;
+}
+
+.search-header{
+    display: flex;
+    align-items: center;
+}
+
+.search-header > h2{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.search-header > h2+i{
+    margin-left: auto;
+    margin-right: 8px;
+}
+
+.search-header > p{
+    margin-right: 10px;
+}
+
+.search-header > div{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search-header > div > h3,
+.search-header > div > i
+{
+    color: var(--main-color);
+    margin-right: 5px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.search-bar{
+    display: flex;
+    margin: 20px 220px;
+    width: 70%;
+    /* height: 100%; */
+    border: 1px lightgrey solid ;
+    border-radius: 40px;
+    padding:4px ;
+    box-sizing: border-box;
+    box-shadow: lightgray 0 0 4px;
+    align-items: center;
+}
+
+.search-bar > i{
+    margin-left: 30px;
+    /* margin-right: 5 px; */
+    /* margin-top: 10px; */
+}
+
+.search-bar > input[type="text"]{
+    margin: auto 20px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+}
+
+.search-bar > input[type="submit"]{
+    margin-left: auto ;
+    border: none;
+    background-color: var(--main-color);
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.search-bar input::placeholder{
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+/* ---Nav Card Layout--- */
+.nav-card-layout {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* 
+.nav-card-layout > div ::-webkit-scrollbar{
+    display: none;
+} */
+
+.nav-card-layout {
+    /* margin: 20px; */
+    padding: 10px 150px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.nav-card-layout h4{
+    font-size: 18px;
+    text-align: center;
+    color: var(--main-color);
+    /* font-weight: bold; */
+}
+
+.nav-card-layout p{
+    text-align: center;
+}
+
+.nav-card-layout div:hover{
+    box-shadow: lightgrey 0 0 10px;
+}
+
+.nav-card-layout  div img{
+    width: 120px;
+    background-size: cover;
+}
+
+/* --Nav card layout end-- */
+
+/* --- New Offer List--- */
+.new-use-layout{
+    width: 100%;
+    height: 100px;
+    border: 1px solid #f6dedc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #FFF7F7;
+    justify-content: space-between;
+    margin: 10px;
+
+}
+
+#btn{
+    padding: 7px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #F2C6C4;
+    margin: 20px;
+}
+
+.new-use-layout img{
+    margin: 10px;
+    
+}
+
+
+.btn-align{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.new-use-layout h4{
+    padding: 10px 15px;
+}
+
+
+
+/* -- Banner -- */
+
+.banner::-webkit-scrollbar{
+    display: none;
+
+}
+
+.banner{
+    display: flex;
+    overflow: auto;
+    width: 90%;
+    margin: auto;
+    margin-bottom:20px ;
+    box-sizing: border-box;
+
+}
+
+.banner img{
+    width: 45%;
+    margin-right:25px ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* ================== */
+.banner2::-webkit-scrollbar{
+    display: none;
+
+}
+
+.banner2,.banner3{
+    display: flex;
+    overflow: auto;
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+
+}
+
+.banner2 img,.banner3 img{
+    /* width: 25%; */
+    margin-right:25px ;
+    border-radius: 10px;
+    cursor: pointer;
+    background-size:cover ;
+}
+
+.card-banner h2,.card-banner p{
+    margin: 0 75.95px;
+}
+
+.card-banner img{
+    width: 100px;
+    margin-left: 10px;
+}
+
+/* --Offer section-- */
+.offer-content{
+    display: flex;
+    margin:0 10px;
+    /* text-align: center; */
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.offer-text h2{
+    margin:20px  75.95px;
+}
+
+.content1{
+    margin:0 75.95px 0 75.95px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #c1bebe;
+    border-radius: 10px;
+    padding: 0 30px;
+    /* gap: 10px; */
+    margin-bottom: 50px;
+    /* justify-content: center; */
+}
+
+.content1:hover{
+    box-shadow: lightgrey 0 0 20px;
+
+}
+
+.offerimg{
+    width: 120px;
+    height: 80px;
+}
+/* offer section end */
+
+
+/* Shop */
+
+.bg-shop{
+    padding: 10px;
+    background-color: #E2F7FF;
+}
+
+.height{
+    height:108px !important;
+}
+/* shop end */
+
+/* Brand */
+.banner3::-webkit-scrollbar{
+    display: none;
+
+}
+
+.spacing{
+    margin-top: 10px;
+    padding: 10px;
+}
+/* Brand end */
+
+/* Why Choose us */
+
+.whyUsContent{
+    display: flex;
+    justify-content: space-evenly;
+}
+.whyUsItem1{
+    /* margin-to; */
+    width: 25%;
+    height: 150px;
+    border: 1px solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5px;
+    /* line-height: 20px; */
+}
+.whyUsItem1 img{
+    width: 200px;
+    height:150px;
+    background-repeat: none;
+    margin-bottom: 5px;
+    /* align-items: center; */
+}
+
+/* Why Choose us end */
